@@ -5,12 +5,12 @@ import numpy as np
 # Set page configuration
 st.set_page_config(page_title="My Streamlit App", layout="wide")
 
-# Custom CSS to hide Streamlit header and footer
+# Custom CSS to hide Streamlit header, footer, and the "Manage App" button
 hide_streamlit_style = """
     <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
+    #MainMenu {visibility: hidden;}  /* Hides the hamburger menu */
+    footer {visibility: hidden;}    /* Hides the footer and "Manage App" button */
+    header {visibility: hidden;}    /* Hides the header */
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
